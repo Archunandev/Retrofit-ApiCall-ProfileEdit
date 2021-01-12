@@ -44,7 +44,7 @@ class PostFragment : Fragment() {
    lateinit var  mRequestQueue: RequestQueue
    lateinit var mStringRequest: StringRequest
 
-   var url = ""
+   var url = "df"
 
 
 
