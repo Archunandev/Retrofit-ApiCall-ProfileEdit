@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/ActionBarUpdate"
+    tools:context=".UpdateActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="Update Profile"
+        app:menu="@menu/top_app_bar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:background="?attr/colorPrimary"
+        />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="62dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/profile_image_layout"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                >
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true"
+                    android:elevation="12dp"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="5dp"
+                    android:src="@drawable/ic_baseline_edit_24"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginRight="19dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="8dp"
+                    android:elevation="8dp"
+                    app:civ_border_color="@color/black"
+                    app:civ_border_width="1dp"
+                    android:src="@drawable/ic_baseline_get_app_24"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="60dp"
+                android:orientation="vertical"
+                android:background="@android:color/white"
+                android:layout_below="@+id/profile_image_layout"
+                >
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:focusableInTouchMode="true"
+                    android:background="@android:color/white"
+                    android:visibility="visible"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                    tools:targetApi="lollipop">
+
+                    <EditText
+                        android:id="@+id/textInputEditTextName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:background="@android:color/white"
+                        android:hint="Name"
+                        android:importantForAutofill="noExcludeDescendants"
+                        android:inputType="text|textNoSuggestions"
+                        android:maxLength="70"
+                        android:maxLines="1"
+                        android:paddingStart="8dp"
+                        android:imeOptions="actionNext"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:paddingLeft="8dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="8dp"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                    tools:targetApi="lollipop">
+
+                    <EditText
+                        android:id="@+id/textInputEditTextEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:importantForAutofill="noExcludeDescendants"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="70"
+                        android:background="@android:color/white"
+                        android:maxLines="1"
+                        android:paddingStart="8dp"
+                        android:imeOptions="actionNext"
+                        android:hint="Contact Email"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:paddingLeft="8dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="8dp"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                    tools:targetApi="lollipop">
+
+                    <EditText
+                        android:id="@+id/textInputEditTextMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="0123456789"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:importantForAutofill="noExcludeDescendants"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:background="@android:color/white"
+                        android:hint="Contact Number"
+                        android:imeOptions="actionDone"
+                        android:paddingStart="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:paddingLeft="8dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/project_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/project_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="Gender"
+                        android:textColor="@color/grey"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="8dp" />
+
+                    <Spinner
+                        android:id="@+id/gender_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:spinnerMode="dialog"
+                        android:layout_marginTop="2dp"
+                        android:backgroundTint="@color/grey"
+                        tools:targetApi="lollipop" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/update_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginEnd="36dp"
+                    android:text="Update"
+                    android:visibility="visible"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="36dp"
+                    android:background="@color/colorThemeBlue"
+
+                    />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    app:cardCornerRadius="12dp"
+    android:elevation="8dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="#fff"
+    android:paddingTop="16dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="@dimen/divider"
+    android:layout_marginRight="12dp"
+    android:layout_marginLeft="12dp"
+    android:paddingBottom="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/ic_baseline_get_app_24"
+            android:id="@+id/url_txt">
+
+        </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/url_txt"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginLeft="5sp"
+            android:text="name"
+            android:id="@+id/first_txt">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="abc@gmail.com"
+            android:layout_marginLeft="5sp"
+            android:id="@+id/email_txt">
+
+        </TextView>
+
+    </LinearLayout>
+</LinearLayout>
+
+<!--    <TextView-->
+<!--        android:id="@+id/id_txt"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="36dp"-->
+<!--        android:layout_marginLeft="36dp"-->
+<!--        android:text="TextView"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/email_txt"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="TextView"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/id_txt"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/id_txt" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/first_txt"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:text="TextView"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/email_txt"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/email_txt" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/last_txt"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:text="TextView"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/first_txt"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/first_txt" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/url_txt"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/last_txt"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/last_txt" />-->
+
+</androidx.cardview.widget.CardView>
