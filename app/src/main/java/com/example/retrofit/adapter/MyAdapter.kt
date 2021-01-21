@@ -12,7 +12,7 @@ import com.example.retrofit.R
 import com.example.retrofit.model.Data2
 
 
-class MyAdapter(private var dataList: ArrayList<Data2>, private val context: Context) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
+class MyAdapter(private var dataList: ArrayList<Data2>,  private val context: Context) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
 
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){

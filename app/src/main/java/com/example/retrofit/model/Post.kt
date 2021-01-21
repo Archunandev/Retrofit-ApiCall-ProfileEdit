@@ -26,7 +26,7 @@ data class Data (
 
 data class Data2 (
 
-        val id : Int,
+        val id : String,
         val email : String,
         val first_name : String,
         val last_name : String,
