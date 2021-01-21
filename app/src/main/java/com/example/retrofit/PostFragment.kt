@@ -82,6 +82,7 @@ class PostFragment : Fragment() {
 
     fun volleyGet() {
 
+        dataList2.clear()
         val url = "https://reqres.in/api/users?page=2"
         val requestQueue = Volley.newRequestQueue(this.context)
         val jsonObjectRequest = JsonObjectRequest(Request.Method.GET, url, null, object: com.android.volley.Response.Listener<JSONObject> {
@@ -101,7 +102,6 @@ class PostFragment : Fragment() {
                                 "" + jsonObject.getString("last_name"),
                                 "" + jsonObject.getString("avatar")
                         )
-                        dataList2.clear()
                         dataList2.add(v1)
                         Log.e("arry" ,""+v1.toString())
 
