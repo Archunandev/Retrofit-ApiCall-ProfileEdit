@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "28737155875",
+    "project_id": "retrofit-fbd51",
+    "storage_bucket": "retrofit-fbd51.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28737155875:android:033bb6e7133b54ca829296",
+        "android_client_info": {
+          "package_name": "com.example.retrofit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "28737155875-t394lnpes20ep0ced13aabb1tnpqqm2k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf19YzbSwI8zhvPqa-njTvg5OW8mz7HUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "28737155875-t394lnpes20ep0ced13aabb1tnpqqm2k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
